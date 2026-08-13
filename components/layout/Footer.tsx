@@ -95,7 +95,7 @@ export default function Footer() {
               <h3 className={styles.colTitle}>Hızlı Bağlantılar</h3>
               <ul className={styles.colList}>
                 <li><Link href="/" className={styles.colLink}>Anasayfa</Link></li>
-                <li><Link href="/bornovamobilya" className={styles.colLink}>Bornova Mobilya (Serhat Günay)</Link></li>
+                <li><Link href="/bornova-mobilya" className={styles.colLink}>Bornova Mobilya (Serhat Günay)</Link></li>
                 <li><Link href="/hakkimizda" className={styles.colLink}>Hakkımızda</Link></li>
                 <li><Link href="/magazalarimiz" className={styles.colLink}>Mağazalarımız</Link></li>
                 <li><Link href="/blog" className={styles.colLink}>Blog</Link></li>

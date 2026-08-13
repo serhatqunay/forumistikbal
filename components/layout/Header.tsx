@@ -9,7 +9,7 @@ import { StoreIcon, PhoneIcon, MailIcon, InstagramIcon } from '@/components/icon
 
 const navLinks = [
   { href: '/', label: 'Anasayfa' },
-  { href: '/bornovamobilya', label: 'Bornova Mobilya' },
+  { href: '/bornova-mobilya', label: 'Bornova Mobilya' },
   { href: '/urunler', label: 'Ürünler' },
   { href: '/hakkimizda', label: 'Hakkımızda' },
   { href: '/magazalarimiz', label: 'Mağazalarımız' },

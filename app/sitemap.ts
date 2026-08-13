@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Static routes
   const staticRoutes = [
     { route: '', priority: 1.0 },
-    { route: '/bornovamobilya', priority: 0.9 },
+    { route: '/bornova-mobilya', priority: 0.9 },
     { route: '/urunler', priority: 0.8 },
     { route: '/hakkimizda', priority: 0.8 },
     { route: '/magazalarimiz', priority: 0.8 },
