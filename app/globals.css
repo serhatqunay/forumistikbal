@@ -82,6 +82,12 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
 body {
   font-family: var(--font-body);
   font-size: 1rem;
@@ -90,7 +96,6 @@ body {
   background-color: var(--color-surface);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
 }
 
 img {

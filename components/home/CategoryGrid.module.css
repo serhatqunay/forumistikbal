@@ -136,20 +136,14 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 540px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 
   .card {
-    padding: 1.5rem 1.25rem;
-    height: 300px;
-  }
-}
-
-@media (max-width: 400px) {
-  .grid {
-    grid-template-columns: 1fr;
+    padding: 1.75rem 1.5rem;
+    height: 320px;
   }
 }

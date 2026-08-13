@@ -148,6 +148,11 @@
   }
   
   .imageWrapper {
-    height: 200px;
+    height: 220px;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    gap: 0.75rem;
   }
 }
