@@ -18,12 +18,14 @@
 
   /* Başlangıçta gizli */
   opacity: 0;
+  pointer-events: none;
   transform: translateY(20px) scale(0.8);
   transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.3s ease;
 }
 
 .fabVisible {
   opacity: 1;
+  pointer-events: auto;
   transform: translateY(0) scale(1);
 }
 
