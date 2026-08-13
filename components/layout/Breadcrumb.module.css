@@ -1,0 +1,43 @@
+.nav {
+  margin-bottom: 2rem;
+}
+
+.list {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-surface-2);
+  border-radius: var(--radius-full);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-muted);
+}
+
+.item a {
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.item a:hover {
+  color: var(--color-accent-dark);
+}
+
+.separator {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-text-light);
+  user-select: none;
+}
+
+.current {
+  color: var(--color-primary);
+  font-weight: 600;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Forum Mobilya — İstikbal Yetkili Satıcısı",
+  "short_name": "Forum Mobilya",
+  "description": "İzmir Bornova'da İstikbal Yetkili Satıcısı. Oturma odası, yatak odası, yemek odası ve genç odası mobilyaları.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a2e",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
