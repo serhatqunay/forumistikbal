@@ -246,16 +246,66 @@
 }
 
 @media (max-width: 768px) {
-  .actionButtonsGroup {
-    grid-template-columns: 1fr;
+  .heroSection {
+    padding: 2.5rem 0 2rem;
   }
-  
-  .trustGrid {
-    grid-template-columns: 1fr;
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .heroTitle {
+    font-size: clamp(1.45rem, 6vw, 2.2rem);
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .contactCard {
+    padding: 1.25rem 1rem;
+    border-radius: 16px;
+    margin-bottom: 1.75rem;
   }
 
   .consultantBadgeWrapper {
     flex-direction: row;
     align-items: center;
+    gap: 0.85rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .avatarPlaceholder {
+    width: 52px;
+    height: 52px;
+  }
+
+  .consultantName {
+    font-size: 1.15rem;
+  }
+
+  .actionButtonsGroup {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .btnAction {
+    padding: 0.85rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .trustGrid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .trustItem {
+    padding: 0.75rem;
   }
 }

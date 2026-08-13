@@ -140,6 +140,44 @@
   }
 }
 
+@media (max-width: 640px) {
+  .banner {
+    height: 220px;
+    margin-bottom: 2rem;
+  }
+
+  .bannerContent {
+    padding-bottom: 1.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .bannerTitle {
+    font-size: 1.35rem;
+    line-height: 1.3;
+  }
+
+  .label {
+    font-size: 0.725rem;
+    padding: 0.3rem 0.75rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .content {
+    padding: 1.25rem 1rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .actions a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* SEO Content Section */
 .seoSection {
   margin-top: 5rem;

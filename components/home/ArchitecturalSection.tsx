@@ -22,7 +22,7 @@ export default function ArchitecturalSection() {
             </div>
 
             <h2 className={styles.title}>
-              Evinizin Ölçülerine Özel <br />
+              Evinizin Ölçülerine Özel <br className={styles.desktopOnlyBr} />
               <span className={styles.titleHighlight}>3D Mimari Çizim &amp; Dekorasyon</span> Desteği
             </h2>
 

@@ -24,7 +24,7 @@ export default function HeroSection() {
         <div className={styles.content}>
           <span className={styles.brandSubtitle}>Forum Mobilya — Bornova İstikbal Showroom</span>
           <h1 className={styles.title}>
-            İzmir Bornova&apos;da<br />
+            İzmir Bornova&apos;da <br className={styles.desktopOnlyBr} />
             Evinize Özel <span className={styles.goldText}>3D Mimari Tasarım</span> &amp; Mobilya
           </h1>
           <p className={styles.subtitle}>

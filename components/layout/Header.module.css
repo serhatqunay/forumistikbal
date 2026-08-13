@@ -330,6 +330,25 @@
 }
 
 @media (max-width: 640px) {
+  .actions {
+    gap: 0.4rem;
+  }
+
+  .btnText {
+    display: none;
+  }
+
+  .actions :global(.btn) {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
   .topbarLeft {
     display: none;
   }

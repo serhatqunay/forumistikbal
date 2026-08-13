@@ -54,3 +54,18 @@
   color: #64748b;
   line-height: 1.6;
 }
+
+@media (max-width: 640px) {
+  .whySection {
+    padding: 3rem 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .featureCard {
+    padding: 1.5rem 1.25rem;
+  }
+}

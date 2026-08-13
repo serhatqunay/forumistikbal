@@ -286,20 +286,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 12px 28px rgba(220, 39, 67, 0.35);
 }
 
-@media (max-width: 640px) {
-  .btn--instagram span {
-    display: none !important;
-  }
-
-  .btn--instagram {
-    padding: 0.5rem 0.65rem !important;
-    min-width: 36px;
-    height: 36px;
-    border-radius: 50% !important;
-    justify-content: center;
-  }
-}
-
 .btn--lg {
   padding: 1rem 2.25rem;
   font-size: 1.05rem;
