@@ -28,8 +28,8 @@ export interface ShowcaseProduct {
 export const consultantInfo: ConsultantInfo = {
   name: 'Serhat Günay',
   title: 'Mobilya Satış Danışmanı',
-  phone: '0545 730 51 07',
-  phoneRaw: '05457305107',
+  phone: '0542 446 80 66',
+  phoneRaw: '05424468066',
   whatsappNumber: '905457305107',
   storeName: 'Forum Mobilya — İstikbal Bornova Mağazası',
   storeAddress: 'Kazımdirik, 372/20. Sk. No:12, 35100 Bornova/İzmir',

@@ -12,7 +12,7 @@ import { consultantInfo } from '@/app/data/consultantData';
 export const metadata: Metadata = {
   title: 'Bornova Mobilya | İzmir Bornova İstikbal Mağazası & 3D Mimari Tasarım',
   description:
-    'İzmir Bornova mobilya mağazamızda en şık İstikbal koltuk takımları, L köşe koltuklar, yatak odaları, yemek odaları ve 3D mimari çizim desteği. Danışmanınız Serhat Günay ile hemen iletişime geçin: 0545 730 51 07.',
+    'İzmir Bornova mobilya mağazamızda en şık İstikbal koltuk takımları, L köşe koltuklar, yatak odaları, yemek odaları ve 3D mimari çizim desteği. Arama: 0542 446 80 66 | WhatsApp (Serhat Günay): 0545 730 51 07.',
   keywords: [
     'bornova mobilya',
     'bornova-mobilya',
@@ -58,7 +58,7 @@ export default function BornovaMobilyaPage() {
     url: 'https://www.bornovamobilya.com.tr/bornova-mobilya',
     logo: 'https://www.bornovamobilya.com.tr/logo.jpeg',
     image: 'https://www.bornovamobilya.com.tr/images/bornova-1.webp',
-    telephone: '+905457305107',
+    telephone: '+905424468066',
     priceRange: '₺₺',
     description:
       'İzmir Bornova Kazımdirik Mahallesi 372/20 Sokak No:12 adresinde hizmet veren resmi İstikbal yetkili satış mağazası. Uzman Danışman Serhat Günay ile ev ölçülerinize özel 3D mimari çizim ve mobilya projelendirme.',

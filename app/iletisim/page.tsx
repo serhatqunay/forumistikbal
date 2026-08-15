@@ -9,14 +9,14 @@ const bornovaStore = stores.find((s) => s.id === 'bornova')!;
 export const metadata: Metadata = {
   title: 'İletişim & Harita | Bornova Mobilya İzmir İstikbal',
   description:
-    'Bornova Mobilya mağazamızın (Kazımdirik) adres, telefon (0545 730 51 07), çalışma saatleri ve yol tarifi harita bilgileri.',
+    'Bornova Mobilya mağazamızın (Kazımdirik) adres, telefon (0542 446 80 66), Serhat Günay WhatsApp (0545 730 51 07), çalışma saatleri ve yol tarifi harita bilgileri.',
   alternates: {
     canonical: 'https://www.bornovamobilya.com.tr/iletisim',
   },
   openGraph: {
     title: 'İletişim & Harita | Bornova Mobilya İzmir İstikbal Mağazası',
     description:
-      'Bornova Mobilya: 0232 339 29 19 / 0545 730 51 07. Kazımdirik Mahallesi adres, çalışma saatleri ve Yol Tarifi.',
+      'Bornova Mobilya: 0232 339 29 19 / 0542 446 80 66. Serhat Günay WhatsApp: 0545 730 51 07. Kazımdirik Mahallesi adres, çalışma saatleri ve Yol Tarifi.',
     url: 'https://www.bornovamobilya.com.tr/iletisim',
     images: [
       {
@@ -68,8 +68,15 @@ export default function ContactPage() {
                 <a href={`tel:${contactInfo.phone2}`} className={styles.link}>
                   <span className={styles.icon}><MobileIcon size={20} /></span>
                   <div>
-                    <strong>GSM &amp; WhatsApp (Serhat Günay)</strong>
+                    <strong>GSM Hat (Arama)</strong>
                     <span>{contactInfo.phone2}</span>
+                  </div>
+                </a>
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                  <span className={styles.icon}><MobileIcon size={20} /></span>
+                  <div>
+                    <strong>WhatsApp (Serhat Günay — Sadece WhatsApp)</strong>
+                    <span>0545 730 51 07</span>
                   </div>
                 </a>
                 <a href={`mailto:${contactInfo.email}`} className={styles.link}>

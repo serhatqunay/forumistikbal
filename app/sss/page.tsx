@@ -47,10 +47,10 @@ export default function FaqPage() {
             <p className="section-subtitle">
               Bornova Mobilya hakkında merak ettiğiniz her şey bu sayfada.
               Bulamadığınız sorunuzu{' '}
-              <a href="tel:02323392919" style={{ color: 'var(--gold)' }}>
-                0232 339 29 19
+              <a href="tel:05424468066" style={{ color: 'var(--gold)' }}>
+                0542 446 80 66
               </a>{' '}
-              veya Serhat Günay (0545 730 51 07) üzerinden bize sorabilirsiniz.
+              veya Serhat Günay WhatsApp (0545 730 51 07) üzerinden bize sorabilirsiniz.
             </p>
           </div>
         </div>

@@ -56,7 +56,7 @@ export function getStoreBySlug(id: string): Store | undefined {
 
 export const contactInfo = {
   phone1: '0232 339 29 19',
-  phone2: '0545 730 51 07',
+  phone2: '0542 446 80 66',
   email: 'info@bornovamobilya.com.tr',
   whatsapp: '905457305107',
   whatsappMessage: 'Merhaba Serhat Bey, Bornova İstikbal mobilya modelleri, mimari çizim ve özel fiyat teklifi hakkında bilgi almak istiyorum.',

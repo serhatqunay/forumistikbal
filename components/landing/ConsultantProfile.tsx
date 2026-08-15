@@ -80,8 +80,12 @@ export default function ConsultantProfile() {
                   <span>{consultantInfo.workingHours}</span>
                 </div>
                 <div className={styles.infoRow}>
-                  <strong>📞 Telefon:</strong>
+                  <strong>📞 Telefon (Arama):</strong>
                   <a href={`tel:${consultantInfo.phoneRaw}`}>{consultantInfo.phone}</a>
+                </div>
+                <div className={styles.infoRow}>
+                  <strong>💬 WhatsApp (Serhat Günay):</strong>
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">0545 730 51 07 (Sadece WhatsApp)</a>
                 </div>
               </div>
 
