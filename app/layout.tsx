@@ -74,9 +74,17 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   icons: {
-    icon: '/logo.jpeg',
-    shortcut: '/logo.jpeg',
-    apple: '/logo.jpeg',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/icon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/icon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
   verification: {
     google: 'googlea8283967eac77ddc',
@@ -96,10 +104,12 @@ export default function RootLayout({
         {/* Google Fonts preconnect */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* PWA & Icons */}
-        <link rel="icon" href="/logo.jpeg" type="image/jpeg" />
-        <link rel="shortcut icon" href="/logo.jpeg" type="image/jpeg" />
-        <link rel="apple-touch-icon" href="/logo.jpeg" />
+        {/* PWA & Google Search Favicon */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon-48x48.png" type="image/png" sizes="48x48" />
+        <link rel="icon" href="/icon-96x96.png" type="image/png" sizes="96x96" />
+        <link rel="icon" href="/icon-192x192.png" type="image/png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
         <meta name="theme-color" content="#1a1a2e" />
       </head>
       <body>
