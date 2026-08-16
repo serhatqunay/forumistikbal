@@ -44,6 +44,7 @@ Koltuk takımlarımız, hem görselliğiyle evinizin havasını değiştirir hem
         imageUrl: '/images/urunler/briella-koltuk-takimi.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/urun/briella-koltuk-takimi',
         featured: true,
+        price: 56498,
       },
       {
         id: 'shine-koltuk-takimi',
@@ -52,6 +53,7 @@ Koltuk takımlarımız, hem görselliğiyle evinizin havasını değiştirir hem
         imageUrl: '/images/urunler/shine-koltuk-takimi.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/urun/shine-koltuk-takimi',
         featured: true,
+        price: 59988,
       },
       {
         id: 'tetra-koltuk-takimi',
@@ -60,6 +62,7 @@ Koltuk takımlarımız, hem görselliğiyle evinizin havasını değiştirir hem
         imageUrl: '/images/urunler/tetra-koltuk-takimi.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/urun/tetra-koltuk-takimi',
         featured: true,
+        price: 66730,
       },
       {
         id: 'koltuk-1',
@@ -68,6 +71,7 @@ Koltuk takımlarımız, hem görselliğiyle evinizin havasını değiştirir hem
         imageUrl: '/images/urunler/legato-koltuk-takimi.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/kategori/koltuk-takimlari',
         featured: false,
+        price: 33998,
       },
     ]
   },
@@ -92,6 +96,7 @@ Ailenizle huzurlu vakit geçirebileceğiniz, sevdiklerinizi ağırlarken şıkl�
         imageUrl: '/images/urunler/vanessa-uclu-koltuk.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/kategori/kanepe-koltuk',
         featured: false,
+        price: 50525,
       },
       {
         id: 'oturma-2',
@@ -100,6 +105,7 @@ Ailenizle huzurlu vakit geçirebileceğiniz, sevdiklerinizi ağırlarken şıkl�
         imageUrl: '/images/urunler/dora-sehpali-uclu-koltuk.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/kategori/kanepe-koltuk',
         featured: false,
+        price: 38383,
       }
     ]
   },
@@ -124,6 +130,7 @@ Köşe koltuk modellerimiz, kaliteli iskelet yapısı, yüksek yoğunluklu süng
         imageUrl: '/images/urunler/mary-kose-koltuk.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/urun/mary-kose-takimi',
         featured: true,
+        price: 48079,
       },
       {
         id: 'kose-1',
@@ -132,6 +139,7 @@ Köşe koltuk modellerimiz, kaliteli iskelet yapısı, yüksek yoğunluklu süng
         imageUrl: '/images/urunler/bloom-kose-koltuk.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/kategori/kose-takimlari',
         featured: false,
+        price: 58126,
       }
     ]
   },
@@ -156,6 +164,7 @@ Yemek odası takımlarımızda kullanılan yüksek kaliteli malzemeler, hem sağ
         imageUrl: '/images/urunler/shine-yemek-odasi.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/urun/shine-yemek-odasi-takimi',
         featured: true,
+        price: 92943,
       },
       {
         id: 'yemek-1',
@@ -164,6 +173,7 @@ Yemek odası takımlarımızda kullanılan yüksek kaliteli malzemeler, hem sağ
         imageUrl: '/images/urunler/destina-yemek-odasi.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/kategori/yemek-odasi-takimi',
         featured: false,
+        price: 69454,
       }
     ]
   },
@@ -187,6 +197,7 @@ Yemek odası takımlarımızda kullanılan yüksek kaliteli malzemeler, hem sağ
         imageUrl: '/images/urunler/active-life-gold-s-yatak.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/kategori/yatak',
         featured: false,
+        price: 13899,
       },
       {
         id: 'yatak-2',
@@ -195,6 +206,7 @@ Yemek odası takımlarımızda kullanılan yüksek kaliteli malzemeler, hem sağ
         imageUrl: '/images/urunler/beta-baza-krem.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/kategori/baza-baslik',
         featured: false,
+        price: 15800,
       }
     ]
   },
@@ -219,6 +231,7 @@ Dinamik renk kombinasyonları, ahşap detaylar ve modern çizgilerle tasarlanan 
         imageUrl: '/images/urunler/borneo-genc-odasi.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/urun/borneo-bohem-genc-odasi-takimi',
         featured: true,
+        price: 64432,
       },
       {
         id: 'genc-1',
@@ -227,6 +240,7 @@ Dinamik renk kombinasyonları, ahşap detaylar ve modern çizgilerle tasarlanan 
         imageUrl: '/images/urunler/fiona-tv-unitesi.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/kategori/genc-odasi',
         featured: false,
+        price: 22500,
       }
     ]
   },
@@ -250,6 +264,7 @@ Bornova mobilya şubemizde küçük salonlar için minimal konsol ünitelerden, 
         imageUrl: '/images/urunler/fiona-tv-unitesi.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/kategori/tv-unitesi',
         featured: false,
+        price: 13560,
       }
     ]
   },
@@ -274,6 +289,7 @@ Kompakt mini takımlardan geniş oturma gruplarına kadar farklı boyut seçenek
         imageUrl: '/images/ravel-bahce-mobilyasi001_min.webp',
         istikbalUrl: 'https://www.istikbal.com.tr/kategori/bahce-mobilyalari',
         featured: false,
+        price: 94096,
       },
       {
         id: 'bahce-2',
@@ -282,6 +298,7 @@ Kompakt mini takımlardan geniş oturma gruplarına kadar farklı boyut seçenek
         imageUrl: '/images/urunler/pablo-bahce-takimi.jpg',
         istikbalUrl: 'https://www.istikbal.com.tr/kategori/bahce-mobilyalari',
         featured: false,
+        price: 63896,
       }
     ]
   }

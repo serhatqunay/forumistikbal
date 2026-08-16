@@ -10,20 +10,20 @@ export interface ProductSchemaItem {
 }
 
 const CATEGORY_DEFAULT_PRICES: Record<string, string> = {
-  'Koltuk Takımları': '34900',
-  'Oturma Grupları': '18900',
-  'Köşe Koltuklar': '28900',
-  'Köşe Koltuk': '28900',
-  'Yemek Odaları': '38900',
-  'Yemek Odası': '38900',
-  'Yatak, Baza & Başlık': '14900',
-  'Yatak & Baza': '14900',
-  'Genç Odaları': '24900',
-  'Genç Odası': '24900',
-  'TV Üniteleri': '12900',
-  'TV Ünitesi': '12900',
-  'Bahçe Mobilyaları': '18900',
-  'Bahçe Mobilyası': '18900',
+  'Koltuk Takımları': '56498',
+  'Oturma Grupları': '38383',
+  'Köşe Koltuklar': '48079',
+  'Köşe Koltuk': '48079',
+  'Yemek Odaları': '69454',
+  'Yemek Odası': '69454',
+  'Yatak, Baza & Başlık': '13899',
+  'Yatak & Baza': '13899',
+  'Genç Odaları': '64432',
+  'Genç Odası': '64432',
+  'TV Üniteleri': '13560',
+  'TV Ünitesi': '13560',
+  'Bahçe Mobilyaları': '63896',
+  'Bahçe Mobilyası': '63896',
 };
 
 export default function ProductSchema({ products }: { products: ProductSchemaItem[] }) {
