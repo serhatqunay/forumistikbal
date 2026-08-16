@@ -5,6 +5,7 @@ export interface Product {
   imageUrl: string;
   istikbalUrl: string;
   featured?: boolean;
+  price?: number;
 }
 
 export interface Category {

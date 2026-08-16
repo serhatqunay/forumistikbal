@@ -116,11 +116,13 @@ export default async function CategoryPage({ params }: PageProps) {
       />
       <ProductSchema
         products={category.products.map((product) => ({
+          id: product.id,
           name: product.name,
           description: product.description,
           image: product.imageUrl,
           url: canonicalUrl,
           category: category.name,
+          price: product.price,
         }))}
       />
 

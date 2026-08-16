@@ -18,11 +18,13 @@ export default function FeaturedProducts() {
     <section className={`section ${styles.section}`}>
       <ProductSchema
         products={featured.map((product) => ({
+          id: product.id,
           name: product.name,
           description: product.description,
           image: product.imageUrl,
           url: `https://www.bornovamobilya.com.tr/urunler/${product.categorySlug}`,
           category: product.categoryName,
+          price: product.price,
         }))}
       />
       <div className="container">
