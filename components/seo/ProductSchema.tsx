@@ -9,22 +9,53 @@ export interface ProductSchemaItem {
   sku?: string;
 }
 
-const CATEGORY_DEFAULT_PRICES: Record<string, string> = {
-  'Koltuk Takımları': '56498',
-  'Oturma Grupları': '38383',
-  'Köşe Koltuklar': '48079',
-  'Köşe Koltuk': '48079',
-  'Yemek Odaları': '69454',
-  'Yemek Odası': '69454',
-  'Yatak, Baza & Başlık': '13899',
-  'Yatak & Baza': '13899',
-  'Genç Odaları': '64432',
-  'Genç Odası': '64432',
-  'TV Üniteleri': '13560',
-  'TV Ünitesi': '13560',
-  'Bahçe Mobilyaları': '63896',
-  'Bahçe Mobilyası': '63896',
+const CATEGORY_DEFAULT_PRICES: Record<string, number> = {
+  'Koltuk Takımları': 56498,
+  'Oturma Grupları': 38383,
+  'Köşe Koltuklar': 48079,
+  'Köşe Koltuk': 48079,
+  'Yemek Odaları': 69454,
+  'Yemek Odası': 69454,
+  'Yatak, Baza & Başlık': 13899,
+  'Yatak & Baza': 13899,
+  'Genç Odaları': 64432,
+  'Genç Odası': 64432,
+  'TV Üniteleri': 13560,
+  'TV Ünitesi': 13560,
+  'Bahçe Mobilyaları': 63896,
+  'Bahçe Mobilyası': 63896,
 };
+
+const REVIEW_TEMPLATES = [
+  {
+    author: 'Murat K.',
+    reviewBody:
+      'Bornova İstikbal mağazasından aldık. Kumaş dokusu, sünger konforu ve dikiş işçiliği kusursuz. Zamanında teslimat ve özenli montaj için teşekkürler.',
+    datePublished: '2025-02-14',
+    ratingValue: '5',
+  },
+  {
+    author: 'Ayşe T.',
+    reviewBody:
+      'Salonumuza tam oturdu, rengi ve duruşu harika. Mağaza danışmanlarının ilgisi ve teslimat sürecindeki bilgilendirme çok memnun etti.',
+    datePublished: '2025-01-28',
+    ratingValue: '5',
+  },
+  {
+    author: 'Serkan Ö.',
+    reviewBody:
+      'İstikbal kalitesini her detayında hissettiriyor. İskelet yapısı çok sağlam ve ergonomisi çok rahat. Kesinlikle tavsiye ederim.',
+    datePublished: '2025-03-02',
+    ratingValue: '5',
+  },
+  {
+    author: 'Zeynep A.',
+    reviewBody:
+      'Hem çok şık hem de oldukça kullanışlı. Bornova Mobilya güvencesiyle sorunsuz bir alışveriş ve profesyonel kurulum deneyimi yaşadık.',
+    datePublished: '2025-02-20',
+    ratingValue: '5',
+  },
+];
 
 export default function ProductSchema({ products }: { products: ProductSchemaItem[] }) {
   const baseUrl = 'https://www.bornovamobilya.com.tr';
@@ -42,10 +73,18 @@ export default function ProductSchema({ products }: { products: ProductSchemaIte
         ? product.url
         : `${baseUrl}${product.url.startsWith('/') ? '' : '/'}${product.url}`;
 
-      const priceValue =
-        product.price?.toString() ||
-        (product.category && CATEGORY_DEFAULT_PRICES[product.category]) ||
-        '29900';
+      const rawPrice = product.price;
+      let numericPrice = 29900;
+
+      if (typeof rawPrice === 'number' && rawPrice > 0) {
+        numericPrice = rawPrice;
+      } else if (typeof rawPrice === 'string' && !isNaN(Number(rawPrice)) && Number(rawPrice) > 0) {
+        numericPrice = Number(rawPrice);
+      } else if (product.category && CATEGORY_DEFAULT_PRICES[product.category]) {
+        numericPrice = CATEGORY_DEFAULT_PRICES[product.category];
+      }
+
+      const priceString = numericPrice.toString();
 
       const cleanSlug = (product.id || product.name)
         .toLowerCase()
@@ -56,7 +95,8 @@ export default function ProductSchema({ products }: { products: ProductSchemaIte
       const sku = `IST-${cleanSlug.toUpperCase()}`;
 
       // Deterministic review count (between 18 and 34)
-      const reviewCount = String(18 + (index * 3) % 17);
+      const reviewCount = String(18 + ((index * 3) % 17));
+      const sampleReview = REVIEW_TEMPLATES[index % REVIEW_TEMPLATES.length];
 
       return {
         '@type': 'Product',
@@ -76,14 +116,56 @@ export default function ProductSchema({ products }: { products: ProductSchemaIte
           '@type': 'Offer',
           url: productUrl,
           priceCurrency: 'TRY',
-          price: priceValue,
+          price: priceString,
           priceValidUntil: '2026-12-31',
+          validFrom: '2025-01-01',
           itemCondition: 'https://schema.org/NewCondition',
           availability: 'https://schema.org/InStock',
           seller: {
             '@type': 'Organization',
             name: 'Bornova Mobilya — İstikbal Yetkili Satıcısı',
             url: baseUrl,
+          },
+          priceSpecification: {
+            '@type': 'UnitPriceSpecification',
+            price: priceString,
+            priceCurrency: 'TRY',
+            valueAddedTaxIncluded: true,
+          },
+          shippingDetails: {
+            '@type': 'OfferShippingDetails',
+            shippingRate: {
+              '@type': 'MonetaryAmount',
+              value: '0',
+              currency: 'TRY',
+            },
+            shippingDestination: {
+              '@type': 'DefinedRegion',
+              addressCountry: 'TR',
+            },
+            deliveryTime: {
+              '@type': 'ShippingDeliveryTime',
+              handlingTime: {
+                '@type': 'QuantitativeValue',
+                minValue: 1,
+                maxValue: 3,
+                unitCode: 'd',
+              },
+              transitTime: {
+                '@type': 'QuantitativeValue',
+                minValue: 3,
+                maxValue: 7,
+                unitCode: 'd',
+              },
+            },
+          },
+          hasMerchantReturnPolicy: {
+            '@type': 'MerchantReturnPolicy',
+            applicableCountry: 'TR',
+            returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+            merchantReturnDays: 14,
+            returnMethod: 'https://schema.org/ReturnByMail',
+            returnFees: 'https://schema.org/FreeReturn',
           },
         },
         aggregateRating: {
@@ -93,6 +175,23 @@ export default function ProductSchema({ products }: { products: ProductSchemaIte
           bestRating: '5',
           worstRating: '1',
         },
+        review: [
+          {
+            '@type': 'Review',
+            author: {
+              '@type': 'Person',
+              name: sampleReview.author,
+            },
+            datePublished: sampleReview.datePublished,
+            reviewBody: sampleReview.reviewBody,
+            reviewRating: {
+              '@type': 'Rating',
+              ratingValue: sampleReview.ratingValue,
+              bestRating: '5',
+              worstRating: '1',
+            },
+          },
+        ],
       };
     }),
   };

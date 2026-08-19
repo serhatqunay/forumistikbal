@@ -95,7 +95,9 @@ export default async function CategoryPage({ params }: PageProps) {
       position: index + 1,
       name: product.name,
       description: product.description,
-      image: product.imageUrl,
+      image: product.imageUrl.startsWith('http')
+        ? product.imageUrl
+        : `https://www.bornovamobilya.com.tr${product.imageUrl.startsWith('/') ? '' : '/'}${product.imageUrl}`,
       url: product.istikbalUrl,
     })),
   };
